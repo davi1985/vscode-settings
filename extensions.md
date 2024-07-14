@@ -1,0 +1,14 @@
+- Activitus Bar
+- Advanced-new0file
+- Apc Customaize UI++
+- Auto Close Tag
+- Auto rename Tag
+- CodeSnap
+- Code Highlight
+- Editor config
+- EsLint
+- Git Blame
+- Jest Runner
+- JetBrains Icon Theme
+- Nord
+- OneNord
