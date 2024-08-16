@@ -3,18 +3,20 @@
   "terminal.integrated.env.osx": {
     "FIG_NEW_SESSION": "1"
   },
+  "editor.bracketPairColorization.enabled": true,
   "terminal.integrated.scrollback": 1000000000,
   "editor.cursorStyle": "line-thin",
   "editor.fontSize": 17,
   "editor.lineHeight": 1.9,
   "editor.fontLigatures": true,
+  // "editor.lineNumbers": "",
   // "editor.fontFamily": "JetBrains Mono",
   // "editor.fontFamily": "Operator Mono Lig",
   "editor.fontFamily": "Dank Mono",
-  // "editor.fontFamily": "CaskaydiaCove Nerd Font Mono",
+  // "editor.fontFamily": "Consolas ligaturized v3",
   "editor.wordWrap": "on",
   "editor.parameterHints.enabled": true,
-  "editor.semanticHighlighting.enabled": true,
+  // "editor.semanticHighlighting.enabled": ,
   "editor.renderLineHighlight": "gutter",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "always"
@@ -76,7 +78,7 @@
   "breadcrumbs.enabled": false,
   "window.titleBarStyle": "native",
   "explorer.sortOrder": "foldersNestsFiles",
-  // apc settings
+  //  apc settings
   "apc.activityBar": {
     "position": "bottom",
     "hideSettings": true,
@@ -101,7 +103,7 @@
   "apc.font.family": "Inter",
   "apc.stylesheet": {
     ".title-label > h2": "display: none",
-    // ".editor-actions": "display: none",
+    ".editor-actions": "display: none",
     ".nosidebar .inline-tabs-placeholder": "width: 75px",
     ".pane-header": "padding: 0 8px",
     // ".pane-body": "padding: 8px",
@@ -139,6 +141,7 @@
     "camelcase",
     "canadian",
     "codepaths",
+    "davisilva",
     "dayjs",
     "devstore",
     "fastify",
@@ -148,6 +151,7 @@
     "Monokai",
     "msal",
     "Msal",
+    "Multiparadigma",
     "overnightjs",
     "pkey",
     "Rchlo",
@@ -162,7 +166,6 @@
     "Upsell",
     "usecase"
   ],
-  "workbench.productIconTheme": "fluent-icons",
   "editor.linkedEditing": true,
   "explorer.confirmDragAndDrop": false,
   "git.openRepositoryInParentFolders": "always",
@@ -173,18 +176,25 @@
   },
   "workbench.activityBar.location": "hidden",
   "diffEditor.ignoreTrimWhitespace": false,
-  "[go]": {
-    "editor.defaultFormatter": "golang.go"
-  },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "git.suggestSmartCommit": false,
-  "editor.minimap.enabled": false,
   "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-dark",
-  "workbench.colorTheme": "Nord",
-  "gitlens.codeLens.enabled": false,
-  "gitlens.currentLine.enabled": false,
   "prettier.singleQuote": true,
-  "prettier.semi": false
+  "prettier.semi": false,
+
+  "advancedNewFile.exclude": {
+    "node_modules": true,
+    "node_modules_electron": true,
+    "dev": true,
+    "dist": true
+  },
+  "advancedNewFile.showInformationMessages": true,
+  "advancedNewFile.convenienceOptions": ["last", "current", "root"],
+  "scm.showHistoryGraph": false,
+  "editor.stickyScroll.enabled": false,
+  "extensions.ignoreRecommendations": true,
+  "workbench.colorTheme": "OneNord",
+  "editor.minimap.enabled": false
 }
