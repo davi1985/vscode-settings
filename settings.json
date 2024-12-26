@@ -1,22 +1,23 @@
 {
   "editor.accessibilitySupport": "off",
-  "terminal.integrated.env.osx": {
-    "FIG_NEW_SESSION": "1"
-  },
   "editor.bracketPairColorization.enabled": true,
   "terminal.integrated.scrollback": 1000000000,
   "editor.cursorStyle": "line-thin",
   "editor.fontSize": 17,
-  "editor.lineHeight": 1.9,
+  "editor.fontWeight": "bold",
+  "editor.lineHeight": 1.8,
+  "terminal.integrated.lineHeight": 1.5,
   "editor.fontLigatures": true,
   // "editor.lineNumbers": "",
   // "editor.fontFamily": "JetBrains Mono",
   // "editor.fontFamily": "Operator Mono Lig",
   "editor.fontFamily": "Dank Mono",
+  // "editor.fontFamily": "Monaco for Powerline",
+  // "editor.fontFamily": "Cascadia Code",
   // "editor.fontFamily": "Consolas ligaturized v3",
   "editor.wordWrap": "on",
   "editor.parameterHints.enabled": true,
-  // "editor.semanticHighlighting.enabled": ,
+  "editor.semanticHighlighting.enabled": true,
   "editor.renderLineHighlight": "gutter",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "always"
@@ -24,7 +25,10 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
-  "editor.rulers": [80, 120],
+  "editor.rulers": [
+    80,
+    120
+  ],
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.inlayHints.enabled": "on",
   "editor.inlayHints.padding": true,
@@ -44,24 +48,18 @@
   "typescript.inlayHints.enumMemberValues.enabled": true,
   "typescript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": false,
   "typescript.inlayHints.variableTypes.suppressWhenTypeMatchesName": false,
-  // Golang
-  "go.inlayHints.assignVariableTypes": true,
-  "go.inlayHints.constantValues": true,
-  "go.inlayHints.compositeLiteralFields": true,
-  "go.inlayHints.compositeLiteralTypes": true,
-  "go.inlayHints.functionTypeParameters": true,
-  "go.inlayHints.parameterNames": true,
-  "go.inlayHints.rangeVariableTypes": true,
-
   "workbench.colorCustomizations": {
-    // "editorInlayHint.background": "#24292e" // github
-    // "editorInlayHint.background": "#282A36" // Dracula
+    // "editorInlayHint.background": "#24292e", // github
+    // "editorInlayHint.background": "#202122", // new ui-dark
+    // "editorInlayHint.background": "#282A36", // Dracula
     // "editorInlayHint.background": "#282c34" // one dark
     "editorInlayHint.background": "#2e3440",
-    // "editorInlayHint.typeBackground": "#1E1F22"
-    "editorInlayHint.foreground": "#566176"
+    // "editorInlayHint.background": "#2a273f",
+    // "editorInlayHint.typeBackground": "#202122" // new ui-dark
+    // "editorInlayHint.foreground": "#566176",
+    "editorInlayHint.typeForeground": "#566176"
   },
-  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontSize": 15,
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
@@ -74,51 +72,54 @@
   },
   "editor.scrollbar.vertical": "hidden",
   "workbench.editor.labelFormat": "short",
-  "workbench.editor.enablePreview": false,
   "breadcrumbs.enabled": false,
-  "window.titleBarStyle": "native",
+  "scm.diffDecorations": "none",
+  "window.titleBarStyle": "custom",
   "explorer.sortOrder": "foldersNestsFiles",
-  //  apc settings
-  "apc.activityBar": {
-    "position": "bottom",
-    "hideSettings": true,
-    "size": 48,
-    "itemMargin": 8,
-    "itemSize": 32
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true
   },
-  "apc.electron": {
-    "titleBarStyle": "hiddenInset",
-    "trafficLightPosition": {
-      "x": 11,
-      "y": 10
-    },
-    "frame": false
-  },
-  "apc.header": {
-    // "height": 36
-  },
-  "apc.listRow": {
-    "height": 24
-  },
-  "apc.font.family": "Inter",
-  "apc.stylesheet": {
-    ".title-label > h2": "display: none",
-    ".editor-actions": "display: none",
-    ".nosidebar .inline-tabs-placeholder": "width: 75px",
-    ".pane-header": "padding: 0 8px",
-    // ".pane-body": "padding: 8px",
-    ".split-view-view:first-child .pane-header": "display: none !important;",
-    ".monaco-list-row": "border-radius: 4px;",
-    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "display: none;"
-  },
+  //   //  apc settings
+  // "apc.menubar.compact": true,
+  // "apc.activityBar": {
+  //   "position": "bottom",
+  //   "hideSettings": true,
+  //   "size": 48,
+  //   "itemMargin": 8,
+  //   "itemSize": 32
+  // },
+  // "apc.electron": {
+  //   "titleBarStyle": "hiddenInset",
+  //   "trafficLightPosition": {
+  //     "x": 11,
+  //     "y": 10
+  //   },
+  //   "frame": false
+  // },
+  // "apc.header": {
+  //   // "height": 36
+  // },
+  // "apc.listRow": {
+  //   "height": 24
+  // },
+  // "apc.font.family": "Inter",
+  // "apc.stylesheet": {
+  //   ".title-label > h2": "display: none",
+  //   ".editor-actions": "display: none",
+  //   ".nosidebar .inline-tabs-placeholder": "width: 75px",
+  //   ".pane-header": "padding: 0 8px",
+  //   // ".pane-body": "padding: 8px",
+  //   ".split-view-view:first-child .pane-header": "display: none !important;",
+  //   ".monaco-list-row": "border-radius: 4px;",
+  //   ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "display: none;"
+  // },
   "javascript.suggest.autoImports": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.tsserver.log": "off",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "typescript.suggest.autoImports": true,
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.editor.pinnedTabSizing": "compact",
-  // "editor.minimap.maxColumn": 70,
   "explorer.fileNesting.patterns": {
     "package.json": ".eslint*, prettier*, tsconfig*, vite*, pnpm-lock*, bun.lockb, nest*",
     "tailwind.config.js": "tailwind.config*, postcss.config*",
@@ -126,9 +127,7 @@
     ".env": ".env*"
   },
   "explorer.fileNesting.enabled": true,
-  "window.commandCenter": false,
   "workbench.layoutControl.enabled": false,
-  "symbols.hidesExplorerArrows": false,
   "explorer.compactFolders": false,
   "editor.cursorBlinking": "blink",
   "cSpell.language": "en,pt-BR",
@@ -141,10 +140,13 @@
     "camelcase",
     "canadian",
     "codepaths",
+    "datasource",
     "davisilva",
     "dayjs",
     "devstore",
     "fastify",
+    "github",
+    "godotenv",
     "hookform",
     "linkedin",
     "localstorage",
@@ -152,11 +154,13 @@
     "msal",
     "Msal",
     "Multiparadigma",
+    "originalname",
     "overnightjs",
     "pkey",
     "Rchlo",
     "rocketseat",
     "signin",
+    "sonner",
     "sqlite",
     "stormglass",
     "tailwindcss",
@@ -164,7 +168,8 @@
     "tiffanny",
     "tsbuildinfo",
     "Upsell",
-    "usecase"
+    "usecase",
+    "usecases"
   ],
   "editor.linkedEditing": true,
   "explorer.confirmDragAndDrop": false,
@@ -174,16 +179,13 @@
     "editor.defaultFormatter": "Prisma.prisma",
     "editor.formatOnSave": true
   },
-  "workbench.activityBar.location": "hidden",
   "diffEditor.ignoreTrimWhitespace": false,
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "git.suggestSmartCommit": false,
-  "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-dark",
   "prettier.singleQuote": true,
   "prettier.semi": false,
-
   "advancedNewFile.exclude": {
     "node_modules": true,
     "node_modules_electron": true,
@@ -191,10 +193,39 @@
     "dist": true
   },
   "advancedNewFile.showInformationMessages": true,
-  "advancedNewFile.convenienceOptions": ["last", "current", "root"],
+  "advancedNewFile.convenienceOptions": [
+    "last",
+    "current",
+    "root"
+  ],
   "scm.showHistoryGraph": false,
+  "scm.showOutgoingChanges": "never",
   "editor.stickyScroll.enabled": false,
   "extensions.ignoreRecommendations": true,
-  "workbench.colorTheme": "OneNord",
-  "editor.minimap.enabled": false
+  "workbench.activityBar.location": "hidden",
+  "search.collapseResults": "auto",
+  "workbench.editor.enablePreview": false,
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
+  "go.inlayHints.assignVariableTypes": true,
+  "go.inlayHints.compositeLiteralFields": true,
+  "go.inlayHints.compositeLiteralTypes": true,
+  "go.inlayHints.constantValues": true,
+  "go.inlayHints.functionTypeParameters": true,
+  "go.inlayHints.parameterNames": true,
+  "go.inlayHints.rangeVariableTypes": true,
+  // "javascript.inlayHints.enumMemberValues.enabled": true,
+  // "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
+  // "javascript.inlayHints.parameterTypes.enabled": true,
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.colorTheme": "Dimi Theme",
+  "workbench.productIconTheme": "material-product-icons",
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "window.commandCenter": false,
+  "go.toolsManagement.autoUpdate": true,
+  "editor.minimap.enabled": false,
+  "workbench.iconTheme": "glyph.legacy",
 }
