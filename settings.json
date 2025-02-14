@@ -229,3 +229,86 @@
   "editor.minimap.enabled": false,
   "workbench.iconTheme": "glyph.legacy",
 }
+
+Zed Settings
+{
+  "format_on_save": "on",
+  "formatter": {
+    "code_actions": {
+      "source.fixAll.eslint": true,
+      "source.organizeImports": true
+    }
+  },
+  "theme": "Nord",
+  "preview_tabs": {
+    "enabled": false
+  },
+  "collaboration_panel": {
+    "dock": "right"
+  },
+  "outline_panel": {
+    "dock": "right"
+  },
+  "buffer_font_size": 16,
+  "soft_wrap": "preferred_line_length",
+  "wrap_guides": [80, 120],
+  "tab_size": 2,
+  "ui_font_size": 14,
+  "buffer_line_height": "comfortable",
+  "inlay_hints": {
+    "enabled": true,
+    "show_type_hints": true,
+    "show_parameter_hints": true,
+    "show_other_hints": true,
+    "show_background": false,
+    "edit_debounce_ms": 700,
+    "scroll_debounce_ms": 50
+  },
+  "buffer_font_family": "DankMono Nerd Font",
+  "terminal": {
+    "alternate_scroll": "off",
+    "blinking": "terminal_controlled",
+    "copy_on_select": false,
+    "dock": "bottom",
+    "detect_venv": {
+      "on": {
+        "directories": [".env", "env", ".venv", "venv"],
+        "activate_script": "default"
+      }
+    },
+    // "font_features": null,
+    "font_size": 14,
+    "line_height": "comfortable",
+    "option_as_meta": false,
+    "button": false,
+    "toolbar": {
+      "breadcrumbs": false
+    },
+    "working_directory": "current_project_directory",
+    "scrollbar": {
+      "show": null
+    }
+  },
+  "toolbar": {
+    "breadcrumbs": false,
+    "quick_actions": false
+  },
+  "project_panel": {
+    "button": true,
+    "default_width": 240,
+    "dock": "right",
+    "entry_spacing": "standard",
+    "file_icons": true,
+    "folder_icons": true,
+    "git_status": true,
+    "indent_size": 16,
+    "auto_reveal_entries": true,
+    "auto_fold_dirs": true,
+    "scrollbar": {
+      "show": "auto"
+    },
+    "indent_guides": {
+      "show": "always"
+    }
+  }
+}
