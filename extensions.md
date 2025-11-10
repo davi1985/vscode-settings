@@ -1,10 +1,4 @@
-- Activitus Bar
-- Advanced-new0file
-- Apc Customaize UI++
-- Auto Close Tag
-- Auto rename Tag
-- CodeSnap
-- Code Highlight
+- Advanced-new-file
 - Editor config
 - EsLint
 - Git Blame
@@ -12,3 +6,6 @@
 - JetBrains Icon Theme
 - Nord
 - OneNord
+- Code Spell Checker
+- Dimi Theme
+- nerd there

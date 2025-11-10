@@ -1,23 +1,33 @@
 {
+  "symbols.files.associations": {
+    "*.module.ts": "nest",
+    "*.controller.ts": "nest",
+    "*.service.ts": "nest",
+  },
   "editor.accessibilitySupport": "off",
   "editor.bracketPairColorization.enabled": true,
   "terminal.integrated.scrollback": 1000000000,
   "editor.cursorStyle": "line-thin",
-  "editor.fontSize": 17,
+  "editor.fontSize": 16,
   "editor.fontWeight": "bold",
   "editor.lineHeight": 1.8,
   "terminal.integrated.lineHeight": 1.5,
   "editor.fontLigatures": true,
+  "breadcrumbs.enabled": false,
+  // "editor.letterSpacing": 0.6,
   // "editor.lineNumbers": "",
   // "editor.fontFamily": "JetBrains Mono",
-  // "editor.fontFamily": "Operator Mono Lig",
-  "editor.fontFamily": "Dank Mono",
-  // "editor.fontFamily": "Monaco for Powerline",
+  // "editor.fontFamily": "Monaco Fira Code",
+  // "editor.fontFamily": "Cartograph CF",
+  // "editor.fontFamily": "OperatorMono Nerd Font",
+  // "editor.fontFamily": "Fira Code iScript",
+  "editor.fontFamily": "DankMono Nerd Font",
+  // "editor.fontFamily": "MonacoLigaturized",
   // "editor.fontFamily": "Cascadia Code",
   // "editor.fontFamily": "Consolas ligaturized v3",
   "editor.wordWrap": "on",
   "editor.parameterHints.enabled": true,
-  "editor.semanticHighlighting.enabled": true,
+  "editor.semanticHighlighting.enabled": false,
   "editor.renderLineHighlight": "gutter",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "always"
@@ -55,24 +65,27 @@
     // "editorInlayHint.background": "#282c34" // one dark
     "editorInlayHint.background": "#2e3440",
     // "editorInlayHint.background": "#2a273f",
-    // "editorInlayHint.typeBackground": "#202122" // new ui-dark
+    // "editorInlayHint.typeBackground": "#202122", // new ui-dark
     // "editorInlayHint.foreground": "#566176",
     "editorInlayHint.typeForeground": "#566176"
   },
-  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
-        "scope": "comment",
+        "scope": [
+          "comment",
+        ],
         "settings": {
-          "fontStyle": "italic"
+          "fontStyle": "italic bold"
         }
-      }
+      },
     ]
   },
   "editor.scrollbar.vertical": "hidden",
   "workbench.editor.labelFormat": "short",
-  "breadcrumbs.enabled": false,
   "scm.diffDecorations": "none",
   "window.titleBarStyle": "custom",
   "explorer.sortOrder": "foldersNestsFiles",
@@ -80,40 +93,6 @@
     "**/node_modules": true,
     "**/dist": true
   },
-  //   //  apc settings
-  // "apc.menubar.compact": true,
-  // "apc.activityBar": {
-  //   "position": "bottom",
-  //   "hideSettings": true,
-  //   "size": 48,
-  //   "itemMargin": 8,
-  //   "itemSize": 32
-  // },
-  // "apc.electron": {
-  //   "titleBarStyle": "hiddenInset",
-  //   "trafficLightPosition": {
-  //     "x": 11,
-  //     "y": 10
-  //   },
-  //   "frame": false
-  // },
-  // "apc.header": {
-  //   // "height": 36
-  // },
-  // "apc.listRow": {
-  //   "height": 24
-  // },
-  // "apc.font.family": "Inter",
-  // "apc.stylesheet": {
-  //   ".title-label > h2": "display: none",
-  //   ".editor-actions": "display: none",
-  //   ".nosidebar .inline-tabs-placeholder": "width: 75px",
-  //   ".pane-header": "padding: 0 8px",
-  //   // ".pane-body": "padding: 8px",
-  //   ".split-view-view:first-child .pane-header": "display: none !important;",
-  //   ".monaco-list-row": "border-radius: 4px;",
-  //   ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "display: none;"
-  // },
   "javascript.suggest.autoImports": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.tsserver.log": "off",
@@ -121,10 +100,21 @@
   "typescript.suggest.autoImports": true,
   "workbench.startupEditor": "newUntitledFile",
   "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    "tsconfig.json": "tsconfig.*.json",
     "package.json": ".eslint*, prettier*, tsconfig*, vite*, pnpm-lock*, bun.lockb, nest*",
     "tailwind.config.js": "tailwind.config*, postcss.config*",
     ".env.local": ".env*",
-    ".env": ".env*"
+    ".env": ".env*",
+    "*.sqlite": "${capture}.${extname}-*",
+    "*.db": "${capture}.${extname}-*",
+    "*.sqlite3": "${capture}.${extname}-*",
+    "*.db3": "${capture}.${extname}-*",
+    "*.sdb": "${capture}.${extname}-*",
+    "*.s3db": "${capture}.${extname}-*"
   },
   "explorer.fileNesting.enabled": true,
   "workbench.layoutControl.enabled": false,
@@ -139,15 +129,20 @@
     "ARCHIVO",
     "camelcase",
     "canadian",
+    "chargescape",
+    "Chrg",
     "codepaths",
     "datasource",
     "davisilva",
     "dayjs",
     "devstore",
+    "evcharge",
     "fastify",
     "github",
+    "GOBID",
     "godotenv",
     "hookform",
+    "jsonify",
     "linkedin",
     "localstorage",
     "Monokai",
@@ -157,9 +152,11 @@
     "originalname",
     "overnightjs",
     "pkey",
+    "Pressable",
     "Rchlo",
     "rocketseat",
     "signin",
+    "Smud",
     "sonner",
     "sqlite",
     "stormglass",
@@ -169,16 +166,13 @@
     "tsbuildinfo",
     "Upsell",
     "usecase",
-    "usecases"
+    "usecases",
+    "uuid"
   ],
   "editor.linkedEditing": true,
   "explorer.confirmDragAndDrop": false,
   "git.openRepositoryInParentFolders": "always",
   "workbench.sideBar.location": "right",
-  "[prisma]": {
-    "editor.defaultFormatter": "Prisma.prisma",
-    "editor.formatOnSave": true
-  },
   "diffEditor.ignoreTrimWhitespace": false,
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
@@ -205,110 +199,229 @@
   "workbench.activityBar.location": "hidden",
   "search.collapseResults": "auto",
   "workbench.editor.enablePreview": false,
-  "[go]": {
-    "editor.defaultFormatter": "golang.go"
-  },
-  "go.inlayHints.assignVariableTypes": true,
-  "go.inlayHints.compositeLiteralFields": true,
-  "go.inlayHints.compositeLiteralTypes": true,
-  "go.inlayHints.constantValues": true,
-  "go.inlayHints.functionTypeParameters": true,
-  "go.inlayHints.parameterNames": true,
-  "go.inlayHints.rangeVariableTypes": true,
-  // "javascript.inlayHints.enumMemberValues.enabled": true,
-  // "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
-  // "javascript.inlayHints.parameterTypes.enabled": true,
   "workbench.editor.empty.hint": "hidden",
-  "workbench.colorTheme": "Dimi Theme",
-  "workbench.productIconTheme": "material-product-icons",
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "window.commandCenter": false,
-  "go.toolsManagement.autoUpdate": true,
+  "diffEditor.codeLens": true,
+  "cSpell.blockCheckingWhenTextChunkSizeGreaterThan": 50000,
+  "window.newWindowProfile": "Default",
+  "workbench.editorAssociations": {
+    "*.copilotmd": "vscode.markdown.preview.editor",
+    "*.svg": "imagePreview.previewEditor"
+  },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "workbench.productIconTheme": "fluent-icons",
+  "terminal.integrated.stickyScroll.enabled": false,
   "editor.minimap.enabled": false,
-  "workbench.iconTheme": "glyph.legacy",
-}
-
-Zed Settings
-{
-  "format_on_save": "on",
-  "formatter": {
-    "code_actions": {
-      "source.fixAll.eslint": true,
-      "source.organizeImports": true
+  "workbench.iconTheme": "symbols",
+  //
+  // ===========================================
+  // ⚙️ COMPORTAMENTO BÁSICO DO VIM
+  // ===========================================
+  // Movimentação rápida (jump words/linhas com easymotion)
+  "vim.easymotion": true,
+  // Busca incremental e destaque automático
+  "vim.incsearch": true,
+  "vim.hlsearch": true,
+  // Usa clipboard do sistema (permite Ctrl+C/V e integração total)
+  "vim.useSystemClipboard": true,
+  // Permite atalhos com Ctrl (igual ao Vim real)
+  "vim.useCtrlKeys": true,
+  // Define a tecla líder (prefixo dos atalhos)
+  "vim.leader": "<space>",
+  // ===========================================
+  // 🧠 ATALHOS PERSONALIZADOS — INSERT MODE
+  // ===========================================
+  // Sai do Insert pressionando "jj"
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
     }
-  },
-  "theme": "Nord",
-  "preview_tabs": {
-    "enabled": false
-  },
-  "collaboration_panel": {
-    "dock": "right"
-  },
-  "outline_panel": {
-    "dock": "right"
-  },
-  "buffer_font_size": 16,
-  "soft_wrap": "preferred_line_length",
-  "wrap_guides": [80, 120],
-  "tab_size": 2,
-  "ui_font_size": 14,
-  "buffer_line_height": "comfortable",
-  "inlay_hints": {
-    "enabled": true,
-    "show_type_hints": true,
-    "show_parameter_hints": true,
-    "show_other_hints": true,
-    "show_background": false,
-    "edit_debounce_ms": 700,
-    "scroll_debounce_ms": 50
-  },
-  "buffer_font_family": "DankMono Nerd Font",
-  "terminal": {
-    "alternate_scroll": "off",
-    "blinking": "terminal_controlled",
-    "copy_on_select": false,
-    "dock": "bottom",
-    "detect_venv": {
-      "on": {
-        "directories": [".env", "env", ".venv", "venv"],
-        "activate_script": "default"
-      }
+  ],
+  // ===========================================
+  // 🚀 ATALHOS PERSONALIZADOS — NORMAL MODE
+  // ===========================================
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // ----------------------------
+    // 📁 Ações de arquivo
+    // ----------------------------
+    {
+      // <leader> + w => salva arquivo
+      "before": [
+        "<leader>",
+        "w"
+      ],
+      "commands": [
+        "workbench.action.files.save"
+      ]
     },
-    // "font_features": null,
-    "font_size": 14,
-    "line_height": "comfortable",
-    "option_as_meta": false,
-    "button": false,
-    "toolbar": {
-      "breadcrumbs": false
+    {
+      // <leader> + q => fecha editor atual
+      "before": [
+        "<leader>",
+        "q"
+      ],
+      "commands": [
+        "workbench.action.closeActiveEditor"
+      ]
     },
-    "working_directory": "current_project_directory",
-    "scrollbar": {
-      "show": null
+    {
+      // <leader> + e => alterna o Explorer (árvore de arquivos)
+      "before": [
+        "<leader>",
+        "e"
+      ],
+      "commands": [
+        "workbench.view.explorer"
+      ]
+    },
+    // ----------------------------
+    // 🧭 Navegação e edição
+    // ----------------------------
+    {
+      // <leader> + d => deleta linha (atalho rápido pra dd)
+      "before": [
+        "<leader>",
+        "d"
+      ],
+      "after": [
+        "d",
+        "d"
+      ]
+    },
+    {
+      // <leader> + y => copia linha (yy)
+      "before": [
+        "<leader>",
+        "y"
+      ],
+      "after": [
+        "y",
+        "y"
+      ]
+    },
+    {
+      // <leader> + p => cola abaixo da linha atual
+      "before": [
+        "<leader>",
+        "p"
+      ],
+      "after": [
+        "p"
+      ]
+    },
+    {
+      // <leader> + P => cola acima da linha atual
+      "before": [
+        "<leader>",
+        "P"
+      ],
+      "after": [
+        "P"
+      ]
+    },
+    // ----------------------------
+    // 🧩 Duplicar e mover código
+    // ----------------------------
+    {
+      // <leader> + s => duplica linha (copy + paste abaixo)
+      "before": [
+        "<leader>",
+        "s"
+      ],
+      "commands": [
+        "editor.action.copyLinesDownAction"
+      ]
+    },
+    // ----------------------------
+    // 🔍 Busca e highlight
+    // ----------------------------
+    {
+      // Ctrl + n => limpa o highlight da busca
+      "before": [
+        "<C-n>"
+      ],
+      "commands": [
+        ":nohl"
+      ]
+    },
+    // ----------------------------
+    // 🪟 Controle de abas / janelas
+    // ----------------------------
+    {
+      // <leader> + t => abre novo editor (nova aba)
+      "before": [
+        "<leader>",
+        "t"
+      ],
+      "commands": [
+        "workbench.action.files.newUntitledFile"
+      ]
+    },
+    {
+      // <leader> + h / l => troca entre abas
+      "before": [
+        "<leader>",
+        "h"
+      ],
+      "commands": [
+        "workbench.action.previousEditor"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "l"
+      ],
+      "commands": [
+        "workbench.action.nextEditor"
+      ]
+    },
+    {
+      // <leader> + g => ir para definição
+      "before": [
+        "<leader>",
+        "g"
+      ],
+      "commands": [
+        "editor.action.revealDefinition"
+      ]
+    },
+    {
+      // <leader> + b => voltar da definição
+      "before": [
+        "<leader>",
+        "b"
+      ],
+      "commands": [
+        "workbench.action.navigateBack"
+      ]
     }
+  ],
+  // ===========================================
+  // 💻 INTEGRAÇÃO COM O VSCODE
+  // ===========================================
+  "vim.handleKeys": {
+    // Mantém Ctrl+A (selecionar tudo) e Ctrl+F (buscar texto) pro VSCode
+    "<C-a>": false,
+    "<C-f>": false,
+    "<C-q>": false,
   },
-  "toolbar": {
-    "breadcrumbs": false,
-    "quick_actions": false
+  // ===========================================
+  // ⚡ PERFORMANCE
+  // ===========================================
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
   },
-  "project_panel": {
-    "button": true,
-    "default_width": 240,
-    "dock": "right",
-    "entry_spacing": "standard",
-    "file_icons": true,
-    "folder_icons": true,
-    "git_status": true,
-    "indent_size": 16,
-    "auto_reveal_entries": true,
-    "auto_fold_dirs": true,
-    "scrollbar": {
-      "show": "auto"
-    },
-    "indent_guides": {
-      "show": "always"
-    }
-  }
+  "workbench.colorTheme": "Dimi Theme"
 }
